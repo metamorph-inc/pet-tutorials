@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE project SYSTEM "mga.dtd">
 
-<project guid="{16EC3C0B-9176-4F40-B5C6-5D63DC9BEBAE}" cdate="Tue Feb 11 14:05:01 2020" mdate="Tue Feb 11 14:05:01 2020" version="" metaguid="{85CD4FB8-841A-079D-1B83-837878ABB1AE}" metaversion="14.13-t38" metaname="CyPhyML">
+<project guid="{EA635A87-65A2-494E-A878-F3F663A3F5F3}" cdate="Tue Feb 11 14:05:01 2020" mdate="Tue Feb 11 14:05:01 2020" version="" metaguid="{85CD4FB8-841A-079D-1B83-837878ABB1AE}" metaversion="14.13-t38" metaname="CyPhyML">
 	<name>RootFolder</name>
 	<comment></comment>
 	<author></author>
@@ -23562,7 +23562,7 @@
 			</regnode>
 		</folder>
 		<folder id="id-006a-0000001a" relid="0x6" childrelidcntr="0x6" kind="Testing" guid="{2ca29048-fdfe-410e-aa7f-c0d87f231330}">
-			<name>Testing</name>
+			<name>Examples</name>
 			<folder id="id-006a-0000001b" relid="0x1" childrelidcntr="0x2" kind="WorkflowDefinitionFolder" guid="{fa623ffd-591d-4a40-b6b4-dc123436c67e}">
 				<name>0_WorkflowDefinitions</name>
 				<folder id="id-006a-0000001c" relid="0x2" childrelidcntr="0x2" kind="TaskFolder" guid="{9f25b4ce-d90c-4832-bd26-49a28f1f18e5}">
@@ -23681,8 +23681,56 @@ or by right-clicking on the canvas and selecting &quot;Annotations&quot;.</value
 					</connection>
 				</model>
 			</folder>
-			<folder id="id-006a-0000001d" relid="0x3" childrelidcntr="0x0" kind="ParametricExplorationFolder" guid="{e4f7e705-a67f-4d85-a40e-4804c4c0d960}">
-				<name>2_ParametricExploration</name>
+			<folder id="id-006a-0000001d" relid="0x3" childrelidcntr="0x11" kind="ParametricExplorationFolder" guid="{e4f7e705-a67f-4d85-a40e-4804c4c0d960}">
+				<name>2_ParametricExploration_Examples</name>
+				<folder id="id-006a-00000022" relid="0x2" childrelidcntr="0x4" kind="ParametricExplorationFolder" guid="{b02c8dbc-324d-48c2-acd1-68cc9f3bbde9}">
+					<name>0_AnalysisBlocks</name>
+					<folder id="id-006a-00000023" relid="0x1" childrelidcntr="0x0" kind="ParametricExplorationFolder" guid="{5c9db419-b56d-4eb4-ba2e-fd9ff403f082}">
+						<name>1_PythonWrapper</name>
+					</folder>
+					<folder id="id-006a-00000024" relid="0x2" childrelidcntr="0x0" kind="ParametricExplorationFolder" guid="{ad8cbbaf-1994-429b-a72a-5724a8985432}">
+						<name>2_MATLAB</name>
+					</folder>
+					<folder id="id-006a-00000025" relid="0x3" childrelidcntr="0x0" kind="ParametricExplorationFolder" guid="{d90e91b5-e7ec-4808-a141-6db807c324c5}">
+						<name>3_Excel</name>
+					</folder>
+					<folder id="id-006a-00000026" relid="0x4" childrelidcntr="0x0" kind="ParametricExplorationFolder" guid="{c0562586-f549-476c-9d35-d3c7e2524bba}">
+						<name>0_TestBench</name>
+					</folder>
+				</folder>
+				<folder id="id-006a-00000027" relid="0x8" childrelidcntr="0x3" kind="ParametricExplorationFolder" guid="{7515afc1-f7a0-41c6-b501-b3e1aee8a1ad}">
+					<name>1_Drivers</name>
+					<folder id="id-006a-00000028" relid="0x1" childrelidcntr="0x0" kind="ParametricExplorationFolder" guid="{6ea5debf-6920-49a9-9569-93e7710fb4f8}">
+						<name>0_ParametricStudy</name>
+					</folder>
+					<folder id="id-006a-00000029" relid="0x2" childrelidcntr="0x0" kind="ParametricExplorationFolder" guid="{757a62c0-0450-4e85-b04f-980a05e39df8}">
+						<name>1_Optimizer</name>
+					</folder>
+					<folder id="id-006a-00000030" relid="0x3" childrelidcntr="0x0" kind="ParametricExplorationFolder" guid="{3ba337aa-634d-4ae3-bc73-7aef50e7c5ac}">
+						<name>2_PCC</name>
+					</folder>
+				</folder>
+				<folder id="id-006a-0000002a" relid="0x9" childrelidcntr="0x0" kind="ParametricExplorationFolder" guid="{01eb783d-1867-4a50-ad29-7ae1e0c6ae01}">
+					<name>4_Units</name>
+				</folder>
+				<folder id="id-006a-0000002b" relid="0xb" childrelidcntr="0x0" kind="ParametricExplorationFolder" guid="{3247a19e-5bd5-4855-95ad-8a08ffd2c5ef}">
+					<name>5_FileIO</name>
+				</folder>
+				<folder id="id-006a-0000002c" relid="0xd" childrelidcntr="0x0" kind="ParametricExplorationFolder" guid="{b3cb68f3-e420-4fee-93c8-823345a42c38}">
+					<name>6_RecordingArtifacts</name>
+				</folder>
+				<folder id="id-006a-0000002d" relid="0xf" childrelidcntr="0x0" kind="ParametricExplorationFolder" guid="{e7f13ef6-8624-4400-af98-813e2eb8d5e7}">
+					<name>7_NestedParametricExplorations</name>
+				</folder>
+				<folder id="id-006a-0000002e" relid="0x10" childrelidcntr="0x1" kind="ParametricExplorationFolder" guid="{c69d7d6f-f648-4aef-a81a-c08de357b4b0}">
+					<name>2_Constants</name>
+					<model id="id-0065-0000026d" kind="ParametricExploration" guid="{f25e9550-d2a0-4e88-bead-604313777a29}" relid="0x1" childrelidcntr="0x2">
+						<name>ParametricExploration</name>
+					</model>
+				</folder>
+				<folder id="id-006a-0000002f" relid="0x11" childrelidcntr="0x0" kind="ParametricExplorationFolder" guid="{82628516-66d8-44fc-8045-e861288d82ac}">
+					<name>3_DataTypes</name>
+				</folder>
 			</folder>
 			<folder id="id-006a-0000001e" relid="0x6" childrelidcntr="0x1" kind="Testing" guid="{23e554c2-1e7c-4307-88dc-3b6aa5546dfe}">
 				<name>1_TestBench</name>
