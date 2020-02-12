@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE project SYSTEM "mga.dtd">
 
-<project guid="{6AE0936D-8BE6-4126-9B09-2D01BA927055}" cdate="Tue Feb 11 18:02:13 2020" mdate="Tue Feb 11 18:02:13 2020" version="" metaguid="{85CD4FB8-841A-079D-1B83-837878ABB1AE}" metaversion="14.13-t38" metaname="CyPhyML">
+<project guid="{10C9C6E4-C24F-456A-9C8E-8CEEF1D2B8CD}" cdate="Tue Feb 11 18:02:13 2020" mdate="Tue Feb 11 18:02:13 2020" version="" metaguid="{85CD4FB8-841A-079D-1B83-837878ABB1AE}" metaversion="14.13-t38" metaname="CyPhyML">
 	<name>RootFolder</name>
 	<comment></comment>
 	<author></author>
@@ -23685,7 +23685,7 @@ or by right-clicking on the canvas and selecting &quot;Annotations&quot;.</value
 				<name>2_ParametricExploration_Examples</name>
 				<folder id="id-006a-0000001e" relid="0x2" childrelidcntr="0x4" kind="ParametricExplorationFolder" guid="{b02c8dbc-324d-48c2-acd1-68cc9f3bbde9}">
 					<name>0_AnalysisBlocks</name>
-					<folder id="id-006a-0000001f" relid="0x1" childrelidcntr="0x2" kind="ParametricExplorationFolder" guid="{5c9db419-b56d-4eb4-ba2e-fd9ff403f082}">
+					<folder id="id-006a-0000001f" relid="0x1" childrelidcntr="0x3" kind="ParametricExplorationFolder" guid="{5c9db419-b56d-4eb4-ba2e-fd9ff403f082}">
 						<name>1_PythonWrapper</name>
 						<model id="id-0065-00000265" kind="ParametricExploration" guid="{6a279d67-9998-4d8b-9420-15422c804da3}" relid="0x1" childrelidcntr="0x5">
 							<name>ParaboloidFunction1Sample</name>
@@ -23974,7 +23974,12 @@ and DOE Type.</value>
 to run this example. It will input a range of
 of x and y values into the 
 Paraboloid Python Wrapper Analysis Block
-and record the function&apos;s output f_xy.</value>
+and record the function&apos;s output f_xy.
+
+Tip: Hold down ctrl 
+and move the middle mouse button
+to zoom in and out of the PET canvas.
+</value>
 									<regnode name="aspects" isopaque="yes">
 										<value>487,45</value>
 										<regnode name="*" isopaque="yes">
@@ -23982,20 +23987,6 @@ and record the function&apos;s output f_xy.</value>
 										</regnode>
 										<regnode name="TestBenchCompositionAspect" isopaque="yes">
 											<value>355,46</value>
-										</regnode>
-									</regnode>
-								</regnode>
-								<regnode name="Annotation1" isopaque="yes">
-									<value>Tip: Hold down ctrl 
-and move the middle mouse button
-to zoom in and out of the PET canvas.</value>
-									<regnode name="aspects" isopaque="yes">
-										<value>481,207</value>
-										<regnode name="*" isopaque="yes">
-											<value>DefaultVisibility</value>
-										</regnode>
-										<regnode name="TestBenchCompositionAspect" isopaque="yes">
-											<value>362,162</value>
 										</regnode>
 									</regnode>
 								</regnode>
@@ -24284,8 +24275,464 @@ and DOE Type.</value>
 				<folder id="id-006a-00000027" relid="0x9" childrelidcntr="0x0" kind="ParametricExplorationFolder" guid="{01eb783d-1867-4a50-ad29-7ae1e0c6ae01}">
 					<name>4_Units</name>
 				</folder>
-				<folder id="id-006a-00000028" relid="0xb" childrelidcntr="0x0" kind="ParametricExplorationFolder" guid="{3247a19e-5bd5-4855-95ad-8a08ffd2c5ef}">
+				<folder id="id-006a-00000028" relid="0xb" childrelidcntr="0x2" kind="ParametricExplorationFolder" guid="{3247a19e-5bd5-4855-95ad-8a08ffd2c5ef}">
 					<name>5_FileIO</name>
+					<model id="id-0065-0000026e" kind="ParametricExploration" guid="{75e5f1b3-9e44-454d-bca6-37b5ad8a5416}" relid="0x1" childrelidcntr="0xb">
+						<name>PythonWrapperSimpleFileOutput</name>
+						<model id="id-0065-0000026f" kind="PythonWrapper" role="PythonWrapper" guid="{63e4bdf7-a9d1-49b4-9928-d54a5670e59d}" relid="0x1" childrelidcntr="0x6">
+							<name>WriteToFile</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="TestBenchCompositionAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>98,182</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<attribute kind="PyFilename">
+								<value>scripts/wrappers/python/write_str_to_file.py</value>
+							</attribute>
+							<atom id="id-0066-000000ed" kind="FileOutput" role="FileOutput" guid="{8ece4824-6c40-401c-a51c-e1f81af21919}" relid="0x4">
+								<name>output_file</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="ValueFlowAspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>800,130</value>
+										</regnode>
+									</regnode>
+								</regnode>
+								<attribute kind="FileName" status="meta">
+									<value></value>
+								</attribute>
+							</atom>
+							<atom id="id-0066-000000ee" kind="FileInput" role="FileInput" guid="{25b7f83d-8693-45d5-9616-add185dc6dbd}" relid="0x5">
+								<name>input_file</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="ValueFlowAspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>20,195</value>
+										</regnode>
+									</regnode>
+								</regnode>
+								<attribute kind="FileName" status="meta">
+									<value></value>
+								</attribute>
+							</atom>
+							<reference id="id-0067-0000034b" kind="Parameter" role="Parameter" guid="{31d722f3-4e08-43d6-9442-5a2f32a71807}" relid="0x6">
+								<name>input_str</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="ValueFlowAspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>20,260</value>
+										</regnode>
+									</regnode>
+								</regnode>
+								<regnode name="pass_by_obj" isopaque="yes">
+									<value>True</value>
+								</regnode>
+								<attribute kind="ComputationType" status="meta">
+									<value>Addition</value>
+								</attribute>
+								<attribute kind="DataType" status="meta">
+									<value>String</value>
+								</attribute>
+								<attribute kind="DefaultValue" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="Description" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="Dimension" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="Disable" status="meta">
+									<value>false</value>
+								</attribute>
+								<attribute kind="ID">
+									<value>id-31d722f3-4e08-43d6-9442-5a2f32a71807</value>
+								</attribute>
+								<attribute kind="ManagedGUID" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="Range" status="meta">
+									<value>-inf..inf</value>
+								</attribute>
+								<attribute kind="Type" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="Value" status="meta">
+									<value></value>
+								</attribute>
+							</reference>
+						</model>
+						<model id="id-0065-00000270" kind="ParameterStudy" role="ParameterStudy" guid="{de903832-20fd-49de-8286-d477583416c0}" relid="0x2" childrelidcntr="0x3">
+							<name>ParameterStudyDriver</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="TestBenchCompositionAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>112,21</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<attribute kind="Code">
+								<value>num_samples=1</value>
+							</attribute>
+							<attribute kind="DOEType" status="meta">
+								<value>Full Factorial</value>
+							</attribute>
+							<attribute kind="SurrogateType" status="meta">
+								<value>None</value>
+							</attribute>
+							<reference id="id-0067-00000348" kind="Objective" role="Objective" guid="{b9df078c-a74b-4226-985f-2a93ba2e79f0}" relid="0x3">
+								<name>output.txt</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="TestBenchCompositionAspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>637,35</value>
+										</regnode>
+									</regnode>
+								</regnode>
+							</reference>
+							<reference id="id-0067-0000034a" kind="DesignVariable" role="DesignVariable" guid="{d3404b0d-6d1f-4921-b854-f321498b19b5}" relid="0x1">
+								<name>str</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="TestBenchCompositionAspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>42,35</value>
+										</regnode>
+									</regnode>
+								</regnode>
+								<attribute kind="Range">
+									<value>&quot;plane&quot;;&quot;train&quot;;&quot;car&quot;;&quot;boat&quot;;&quot;bike&quot;;&quot;bus&quot;</value>
+								</attribute>
+							</reference>
+						</model>
+						<connection id="id-0068-00000037" kind="VariableSweep" role="VariableSweep" guid="{3f1d13db-c4a5-4d62-a957-177a6f29b452}" relid="0x6">
+							<name>VariableSweep</name>
+							<regnode name="color" isopaque="yes">
+								<value>0xff80c0</value>
+							</regnode>
+							<regnode name="dstStyle" isopaque="yes">
+								<value>arrow</value>
+							</regnode>
+							<connpoint role="src" target="id-0067-0000034a"/>
+							<connpoint role="dst" target="id-0067-0000034b"/>
+						</connection>
+						<connection id="id-0068-00000038" kind="FileResultFlow" role="FileResultFlow" guid="{3a597c1d-4e14-4ba0-a559-441abe5cccd1}" relid="0x7">
+							<name>FileResultFlow</name>
+							<connpoint role="src" target="id-0066-000000ed"/>
+							<connpoint role="dst" target="id-0067-00000348"/>
+						</connection>
+					</model>
+					<model id="id-0065-00000273" kind="ParametricExploration" guid="{93b81c14-f91b-4284-ab9c-fa879dd81411}" relid="0x2" childrelidcntr="0xb">
+						<name>PythonWrapperComplexFileOutput</name>
+						<model id="id-0065-00000274" kind="ParameterStudy" role="ParameterStudy" guid="{4fe923a7-ff75-46ec-9bee-3decf06b4014}" relid="0x2" childrelidcntr="0x3">
+							<name>ParameterStudyDriver</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="TestBenchCompositionAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>399,28</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<attribute kind="Code">
+								<value>num_samples=1</value>
+							</attribute>
+							<attribute kind="DOEType" status="meta">
+								<value>Full Factorial</value>
+							</attribute>
+							<attribute kind="SurrogateType" status="meta">
+								<value>None</value>
+							</attribute>
+							<reference id="id-0067-0000034e" kind="DesignVariable" role="DesignVariable" guid="{0b68f88f-e843-4d9e-92cd-67265861ba3a}" relid="0x1">
+								<name>str</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="TestBenchCompositionAspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>42,35</value>
+										</regnode>
+									</regnode>
+								</regnode>
+								<attribute kind="Range">
+									<value>&quot;plane&quot;;&quot;train&quot;;&quot;car&quot;;&quot;boat&quot;;&quot;bike&quot;;&quot;bus&quot;</value>
+								</attribute>
+							</reference>
+							<reference id="id-0067-0000034f" kind="Objective" role="Objective" guid="{e21c4be5-c8d4-4b26-820c-e67231d620ce}" relid="0x3">
+								<name>output.txt</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="TestBenchCompositionAspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>637,35</value>
+										</regnode>
+									</regnode>
+								</regnode>
+							</reference>
+						</model>
+						<model id="id-0065-00000275" kind="PythonWrapper" role="PythonWrapper" guid="{ad351751-4781-41df-9b7c-aa9e6fa2dd99}" relid="0x1" childrelidcntr="0x6">
+							<name>WriteToFile2</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="TestBenchCompositionAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>385,189</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<attribute kind="PyFilename">
+								<value>scripts/wrappers/python/write_str_to_file.py</value>
+							</attribute>
+							<atom id="id-0066-000000f1" kind="FileInput" role="FileInput" guid="{ae3e6754-b4a9-4278-91c8-cf1012877f5b}" relid="0x5">
+								<name>input_file</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="ValueFlowAspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>20,195</value>
+										</regnode>
+									</regnode>
+								</regnode>
+								<attribute kind="FileName" status="meta">
+									<value></value>
+								</attribute>
+							</atom>
+							<atom id="id-0066-000000f2" kind="FileOutput" role="FileOutput" guid="{862050fc-c755-45d8-892d-6e6428feeb53}" relid="0x4">
+								<name>output_file</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="ValueFlowAspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>800,130</value>
+										</regnode>
+									</regnode>
+								</regnode>
+								<attribute kind="FileName" status="meta">
+									<value></value>
+								</attribute>
+							</atom>
+							<reference id="id-0067-00000350" kind="Parameter" role="Parameter" guid="{cde16af3-9c55-4c99-9081-a5915e98109c}" relid="0x6">
+								<name>input_str</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="ValueFlowAspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>20,260</value>
+										</regnode>
+									</regnode>
+								</regnode>
+								<regnode name="pass_by_obj" isopaque="yes">
+									<value>True</value>
+								</regnode>
+								<attribute kind="ComputationType" status="meta">
+									<value>Addition</value>
+								</attribute>
+								<attribute kind="DataType" status="meta">
+									<value>String</value>
+								</attribute>
+								<attribute kind="DefaultValue" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="Description" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="Dimension" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="Disable" status="meta">
+									<value>false</value>
+								</attribute>
+								<attribute kind="ID">
+									<value>id-cde16af3-9c55-4c99-9081-a5915e98109c</value>
+								</attribute>
+								<attribute kind="ManagedGUID" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="Range" status="meta">
+									<value>-inf..inf</value>
+								</attribute>
+								<attribute kind="Type" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="Value" status="meta">
+									<value></value>
+								</attribute>
+							</reference>
+						</model>
+						<model id="id-0065-00000276" kind="Constants" role="Constants" guid="{70165b25-f9e5-4845-90de-e868330b966b}" relid="0xa" childrelidcntr="0x1">
+							<name>Constants</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="TestBenchCompositionAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>126,280</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<reference id="id-0067-00000351" kind="Metric" role="Metric" guid="{d1884a33-867f-475d-8414-35717bfbf6b6}" relid="0x1">
+								<name>ShakespeareQuote</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="Aspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>49,42</value>
+										</regnode>
+									</regnode>
+								</regnode>
+								<attribute kind="Description" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="ManagedGUID" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="Value">
+									<value>&quot;All that glitters is not gold&quot;</value>
+								</attribute>
+							</reference>
+						</model>
+						<model id="id-0065-00000277" kind="PythonWrapper" role="PythonWrapper" guid="{027070b2-4460-4455-b527-358e04f89dfe}" relid="0x8" childrelidcntr="0x3">
+							<name>WriteToFile1</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="TestBenchCompositionAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>126,182</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<attribute kind="PyFilename">
+								<value>scripts/wrappers/python/write_str_to_file.py</value>
+							</attribute>
+							<atom id="id-0066-000000f3" kind="FileInput" role="FileInput" guid="{f277e065-f6ee-4ca6-9ad8-3eaab78c72cd}" relid="0x2">
+								<name>input_file</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="ValueFlowAspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>20,65</value>
+										</regnode>
+									</regnode>
+								</regnode>
+								<attribute kind="FileName" status="meta">
+									<value></value>
+								</attribute>
+							</atom>
+							<atom id="id-0066-000000f4" kind="FileOutput" role="FileOutput" guid="{1213e815-69ef-4ae3-a199-bd73b1d80876}" relid="0x1">
+								<name>output_file</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="ValueFlowAspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>800,65</value>
+										</regnode>
+									</regnode>
+								</regnode>
+								<attribute kind="FileName" status="meta">
+									<value></value>
+								</attribute>
+							</atom>
+							<reference id="id-0067-00000352" kind="Parameter" role="Parameter" guid="{7ca66cc8-dec8-4858-a09f-eb3132c3afbd}" relid="0x3">
+								<name>input_str</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="ValueFlowAspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>20,130</value>
+										</regnode>
+									</regnode>
+								</regnode>
+								<regnode name="pass_by_obj" isopaque="yes">
+									<value>True</value>
+								</regnode>
+								<attribute kind="ComputationType" status="meta">
+									<value>Addition</value>
+								</attribute>
+								<attribute kind="DataType" status="meta">
+									<value>String</value>
+								</attribute>
+								<attribute kind="DefaultValue" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="Description" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="Dimension" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="Disable" status="meta">
+									<value>false</value>
+								</attribute>
+								<attribute kind="ID">
+									<value>id-7ca66cc8-dec8-4858-a09f-eb3132c3afbd</value>
+								</attribute>
+								<attribute kind="ManagedGUID" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="Range" status="meta">
+									<value>-inf..inf</value>
+								</attribute>
+								<attribute kind="Type" status="meta">
+									<value></value>
+								</attribute>
+								<attribute kind="Value" status="meta">
+									<value></value>
+								</attribute>
+							</reference>
+						</model>
+						<connection id="id-0068-0000003b" kind="VariableSweep" role="VariableSweep" guid="{0f0bd481-11b6-4043-886d-d59944f00203}" relid="0x6">
+							<name>VariableSweep</name>
+							<regnode name="color" isopaque="yes">
+								<value>0xff80c0</value>
+							</regnode>
+							<regnode name="dstStyle" isopaque="yes">
+								<value>arrow</value>
+							</regnode>
+							<connpoint role="src" target="id-0067-0000034e"/>
+							<connpoint role="dst" target="id-0067-00000350"/>
+						</connection>
+						<connection id="id-0068-0000003c" kind="FileResultFlow" role="FileResultFlow" guid="{ec000a5c-fb61-4f5c-bbb9-c10edb68fe70}" relid="0x7">
+							<name>FileResultFlow</name>
+							<connpoint role="src" target="id-0066-000000f2"/>
+							<connpoint role="dst" target="id-0067-0000034f"/>
+						</connection>
+						<connection id="id-0068-0000003d" kind="FileResultFlow" role="FileResultFlow" guid="{d3a47a1a-09ff-4cb3-8a65-ed562d66e8d7}" relid="0x9">
+							<name>FileResultFlow</name>
+							<connpoint role="dst" target="id-0066-000000f1"/>
+							<connpoint role="src" target="id-0066-000000f4"/>
+						</connection>
+						<connection id="id-0068-0000003e" kind="ResultFlow" role="ResultFlow" guid="{ca5a8552-e128-441f-90b2-e4e26a0a4b00}" relid="0xb">
+							<name>ResultFlow</name>
+							<connpoint role="src" target="id-0067-00000351"/>
+							<connpoint role="dst" target="id-0067-00000352"/>
+						</connection>
+					</model>
 				</folder>
 				<folder id="id-006a-00000029" relid="0xd" childrelidcntr="0x0" kind="ParametricExplorationFolder" guid="{b3cb68f3-e420-4fee-93c8-823345a42c38}">
 					<name>6_RecordingArtifacts</name>
