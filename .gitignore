@@ -26,3 +26,4 @@ components/**/*.m_p
 manifest.project.json
 
 *.pyc
+*.idea
