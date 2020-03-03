@@ -7,6 +7,7 @@ requirements/
 test-benches/
 archive/
 designs/
+design-space/
 merged/
 metalink/
 manifest.project.json
