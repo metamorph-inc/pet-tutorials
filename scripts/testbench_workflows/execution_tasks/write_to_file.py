@@ -35,13 +35,14 @@ def main():
     f_text = ""
 
     # read input file if provided
-    try:
-        with open(file_inputs['input_file'], "r") as f_in:
-            f_text = f_in.read()
-            print("input file: {}".format(file_inputs['input_file']))
-            print(f_text)
-    except IOError:
-        print("No input file: {}".format(file_inputs['input_file']))
+    for k, fname in file_inputs.items():
+        try:
+            with open(fname, "r") as f_in:
+                f_text += f_in.read()
+                print("input file: {}".format(fname))
+                print(f_text)
+        except IOError:
+            print("No input file: {}".format(fname))
 
     # append input str to file text
     f_text += params['input_str'] + "\n"
@@ -49,10 +50,11 @@ def main():
     # metrics['output_str'] = f_text  # FIXME: Test Bench current do not support non-float outputs
 
     # write output file
-    print(file_outputs['output_file'])
-    with open(file_outputs['output_file'], "w") as f_out:  # https://openmdao.readthedocs.io/en/1.7.3/usr-guide/tutorials/file-passing.html
-        print("Writing to output file: {}".format(file_outputs["output_file"]))
-        f_out.write(f_text)
+    for k, fname in file_outputs.items():
+        print(fname)
+        with open(fname, "w") as f_out:  # https://openmdao.readthedocs.io/en/1.7.3/usr-guide/tutorials/file-passing.html
+            print("Writing to output file: {}".format(fname))
+            f_out.write(f_text)
 
 
 if __name__ == '__main__':
